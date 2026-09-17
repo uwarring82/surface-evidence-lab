@@ -1,7 +1,7 @@
 {
   "scout_date": "2026-09-10",
   "scope": "First-pass scout accepted as a selection milestone; not the completed five-person-day survey",
-  "distribution_decision": "Public teaching core uses Seibert and Croshaw CC BY material and original text. Xu and Lu remain linked readings with separate commentary. The source-preservation bundle retains all individual licence restrictions.",
+  "distribution_decision": "Public teaching core uses Croshaw CC BY material and original text. Seibert remains a core case as a linked reading with separate commentary until reuse permission for the exact version and figure is verified. Xu and Lu remain linked readings with separate commentary. The source-preservation bundle retains all individual licence restrictions.",
   "sources": [
     {
       "id": "seibert-2020",
@@ -10,8 +10,9 @@
       "year": 2020,
       "url": "https://doi.org/10.1021/acs.langmuir.0c00748",
       "access_url": "https://noah.nrw/ubbihs/content/titleinfo/5141652",
-      "licence": "CC BY 4.0 assigned by the Bielefeld/NOAH repository rights record; retain that record with the PDF.",
-      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "licence": "Redistribution permission unverified. Not redistributed in the repository; linked reading with separate commentary until permission for the exact version and figure is verified.",
+      "rights_status": "unverified",
+      "licence_url": null,
       "inspection": "Full paper read; Fig. 2 visually inspected. Supplement not inspected.",
       "version": "Published journal PDF served by institutional repository",
       "checked_on": "2026-09-10",
@@ -24,8 +25,8 @@
           "bytes": 5808981,
           "sha256": "0f441dd021a2d0f5986f74bc23db20c562122caf96ce3bcb8429f88723a8f3d8",
           "content_type": "application/pdf",
-          "path": "sources/seibert-2020.pdf",
-          "optional_in_repository": false
+          "path": "local-source-archive/seibert-2020.pdf",
+          "optional_in_repository": true
         },
         {
           "file": "seibert-2020-record.html",
@@ -36,7 +37,21 @@
           "sha256": "73f9a39b88cc24837e5b262c813e07f0740491ab27906d7586f13671b77164dc",
           "content_type": "text/html; charset=utf-8",
           "path": "sources/seibert-2020-record.html",
-          "optional_in_repository": false
+          "optional_in_repository": false,
+          "note": "Browser-verification page, not a rights record. Retained as evidence of the failed rights retrieval."
+        }
+      ],
+      "rights_corrections": [
+        {
+          "date": "2026-09-17",
+          "withdrawn_claim": "CC BY 4.0 assigned by the Bielefeld/NOAH repository rights record; retain that record with the PDF.",
+          "findings": [
+            "seibert-2020-record.html is a browser-verification page from the repository site; it contains no rights statement.",
+            "The archived PDF is the publisher version with the footer '© 2020 American Chemical Society', a 'Downloaded via BIELEFELD LIBRARIES on July 23, 2020' margin stamp and a pointer to ACS sharing guidelines; it carries no Creative Commons notice.",
+            "Crossref metadata for the DOI lists publisher policy references, not a Creative Commons licence.",
+            "Unpaywall lists a submitted version at PUB Bielefeld (https://pub.uni-bielefeld.de/record/2944406) as cc-by; this was not verified because the site blocks automated access, and it is not the archived version.",
+            "The project lead confirmed the browser-verification page and that the ACS article page identifies ACS copyright without establishing CC BY permission for the archived PDF."
+          ]
         }
       ]
     },
@@ -345,5 +360,5 @@
   ],
   "packaged_on": "2026-09-17",
   "path_base": "repository_root",
-  "packaging_note": "Source bytes and original retrieval dates unchanged. Local archive files included in handoff ZIP, ignored by default Git setup."
+  "packaging_note": "Source bytes and original retrieval dates unchanged. Local archive files included in handoff ZIP, ignored by default Git setup. On 2026-09-17 the Seibert PDF moved to local-source-archive/ after its CC BY claim was withdrawn."
 }

@@ -8,7 +8,7 @@ Draft for review · 10 September 2026
 
 ## A. A controlled intervention with variable outcomes
 
-Read Seibert et al., *Origin of Ubiquitous Stripes at the Graphite–Water Interface*, Fig. 2 and pp. 7790–7791. [Paper](https://doi.org/10.1021/acs.langmuir.0c00748) · [Preserved copy](../sources/seibert-2020.pdf)
+Read Seibert et al., *Origin of Ubiquitous Stripes at the Graphite–Water Interface*, Fig. 2 and pp. 7790–7791. [Paper](https://doi.org/10.1021/acs.langmuir.0c00748) (publisher version; access may require an institutional subscription)
 
 The reported evidence is:
 
@@ -59,4 +59,4 @@ Compare Lu et al., *Interface-Induced Ordering of Gas Molecules Confined in a Sm
 
 Submit your answers and a small claim table with columns for: observations compared; relationship kind; assertion; supporting source; unresolved information; and inference affected. Keep the claim's origin separate from disagreement and any quantitative uncertainty.
 
-**Distribution:** this draft contains original teaching text and source links. Seibert and Croshaw are the core sources selected for future attributed figure use under their recorded CC BY terms. Xu and Lu remain links with separate commentary; their images are not reproduced or adapted here. The separately preserved research-source bundle is not a blanket-licensed public teaching packet.
+**Distribution:** this draft contains original teaching text and source links. Croshaw is the core source selected for future attributed figure use under its CC BY terms. Seibert is a linked reading: its redistribution permission is unverified, so its figures are not reproduced here. Xu and Lu remain links with separate commentary; their images are not reproduced or adapted here. The separately preserved research-source bundle is not a blanket-licensed public teaching packet.

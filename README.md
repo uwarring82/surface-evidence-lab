@@ -19,8 +19,8 @@ The teaching core studies **adsorbed gas versus organic contamination at graphit
 |---|---|
 | `teaching/` | Review drafts, blank claim table, figure preparation brief |
 | `literature/` | Scout and human/machine-readable source manifests: 15 source records |
-| `sources/` | Eight preserved files associated with the CC BY sources and their provenance records |
-| `local-source-archive/` | README only in Git; the Xu XML and unchanged Lu PDF exist only in the complete handoff ZIP |
+| `sources/` | Seven preserved files: the CC BY Croshaw and Pálinkás sources with their provenance records, and the failed Seibert rights retrieval |
+| `local-source-archive/` | README only in Git; the Xu XML, unchanged Lu PDF and Seibert PDF (redistribution permission unverified) exist only in the complete handoff ZIP |
 | `docs/` | Architecture brief, decisions, evidence and time-model requirements |
 | `planning/` | Task card and actionable issue drafts |
 | `scripts/` | Source-integrity verification using only the Python standard library |

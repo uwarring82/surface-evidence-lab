@@ -8,7 +8,7 @@ Consolidated 17 September 2026. Scientific inspection and retrieval dates remain
 - Seibert Fig. 2 supplies a source-asserted same-area intervention and variable outcomes. The worksheet includes seven stripe-free glass-syringe references, roughly one-in-five stripe absence in the broader plastic-syringe experiments, and two matching glass-to-plastic exchanges. These are distinct protocols, not one pooled trial series.
 - Croshaw Fig. 5 is the second core case. Its three separate sequences teach that measurement can alter the specimen and the tip.
 - Worksheet and instructor review drafts exist. Xu's caption-label corrections are documented separately from the unchanged XML. They do not establish quantitative spatial correspondence.
-- Fifteen source records and ten files are preserved with identifiers, retrieval dates and checksums. The Figshare record is present; its dataset ZIP is not.
+- Fifteen source records and ten files are preserved with identifiers, retrieval dates and checksums. The Figshare record is present; its dataset ZIP is not. The Seibert PDF's redistribution permission is unverified (CC BY claim withdrawn 17 September 2026), so it is kept out of Git with the Xu and Lu files.
 - The repository handoff adds architecture/decision notes, a blank claim table, a figure brief, issue drafts and a source verifier. These additions do not constitute teaching or scientific validation.
 
 ## Open requirements
@@ -21,13 +21,14 @@ Consolidated 17 September 2026. Scientific inspection and retrieval dates remain
 | U4 | Quantitative registration | No transform, independent validation or uncertainty certificate has been assessed. A published figure or stage coordinate alone is insufficient. |
 | U5 | Research physics | No pilot discriminating bulk diffusion from ambient contamination has been selected or run. |
 | U6 | Data access and inspection | Pálinkás Figshare ZIP retrieval/inspection is pending. Metadata and article figures are not a validated raw dataset. |
-| U7 | Teaching readiness | Attributed figure layout, walkthrough, review of student answerability and revisions remain. |
+| U7 | Teaching readiness | Attributed figure layout, walkthrough, review of student answerability and revisions remain. Only Croshaw figures have a verified reuse basis; Seibert Fig. 2 is read via link until permission for the exact version and figure is verified. |
 
 U1 and U2 are separate safeguards before dependent research mechanics are relied on. U3 and U4 also remain untested even if an introductory teaching packet is released. No graph representation currently exists to validate any of these mechanics.
 
 ## Decisions still needed
 
-- Original-material licence and named maintainer. Hosting and visibility are settled: the repository has been public on GitHub as `uwarring82/surface-evidence-lab` since 17 September 2026; renaming is optional. The current project lead remains accountable, with no external implementer assigned.
+- Original-material licence and named maintainer. Hosting and visibility are settled: public GitHub repository `uwarring82/surface-evidence-lab`, replaced from rebuilt history on 17 September 2026 (see [D15](docs/decisions.md)); renaming is optional. The current project lead remains accountable, with no external implementer assigned.
+- Whether to seek reuse permission for Seibert Fig. 2 (exact version and figure) or keep it link-only.
 - Time/effort allowance and owner for any further formal survey. Earlier scout effort was not logged.
 - Later: research specimen, acquisition-record minimum, physical retention and lineage, source/deposition workflow, standards profile, access controls and implementation ownership.
 

@@ -6,7 +6,7 @@ Draft for review · Companion to [student worksheet](student-worksheet.md)
 
 ## Seibert: evidence and variability
 
-The key asymmetry is seven reported stripe-free glass-syringe references versus variable stripe formation with plastic syringes, with stripes absent in about one fifth of that broader set. The two within-sample exchange experiments add intervention evidence. They must not be pooled as if all protocols were identical or assigned the general plastic-syringe rate without qualification. Source: Seibert pp. 7790–7791 and Fig. 2, [preserved paper](../sources/seibert-2020.pdf).
+The key asymmetry is seven reported stripe-free glass-syringe references versus variable stripe formation with plastic syringes, with stripes absent in about one fifth of that broader set. The two within-sample exchange experiments add intervention evidence. They must not be pooled as if all protocols were identical or assigned the general plastic-syringe rate without qualification. Source: Seibert pp. 7790–7791 and Fig. 2, [publisher version](https://doi.org/10.1021/acs.langmuir.0c00748). Check that students can reach it; access may require an institutional subscription.
 
 A strong answer concludes that the reported controls support syringe-associated contamination as an explanation for these observations and challenge nitrogen-alone sufficiency under the tested conditions. It does not establish a particular chemical species, universal stripe production after plastic use, or the origin of all earlier reported stripes. A non-stripe outcome does not by itself refute a probabilistic contamination mechanism.
 
@@ -38,6 +38,6 @@ Keep the tracked longitudinal linkage safeguard and the missing-history/gap-char
 
 ## Distribution and readiness
 
-Use Seibert and Croshaw as the CC BY core, with attribution based on the preserved rights records. Keep Xu and Lu link-only with original commentary in the public packet. This is a deliberate packaging choice; it is not a claim that noncommercial material can never be publicly shared or that every arrangement of unchanged panels is an adaptation.
+Use Croshaw as the CC BY figure core, with attribution based on its publisher licence notice. Seibert remains a core case but link-only: its earlier CC BY record was withdrawn on 17 September 2026, and its figures are not reproduced until permission for the exact version and figure is verified. Keep Xu and Lu link-only with original commentary in the public packet. This is a deliberate packaging choice; it is not a claim that noncommercial material can never be publicly shared or that every arrangement of unchanged panels is an adaptation.
 
 The worksheet is a source-linked review draft. No finished figure layout or classroom trial has been completed. Historical linked readings are supplementary, so the core learning aims can be taught without reproducing their figures.

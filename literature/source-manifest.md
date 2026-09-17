@@ -2,11 +2,11 @@
 
 Checked 10 September 2026. This is a source-preservation record, not a guarantee of experimental provenance. SHA-256 identifies the archived bytes. Full source licences remain in force; no new blanket licence is applied.
 
-Public teaching core uses Seibert and Croshaw CC BY material and original text. Xu and Lu remain linked readings with separate commentary. The source-preservation bundle retains all individual licence restrictions.
+Public teaching core uses Croshaw CC BY material and original text. Seibert remains a core case as a linked reading with separate commentary until reuse permission for the exact version and figure is verified. Xu and Lu remain linked readings with separate commentary. The source-preservation bundle retains all individual licence restrictions.
 
 Text-only XML does not preserve externally linked figure images. A deposited dataset record is not the dataset itself.
 
-Paths in the JSON manifest are relative to the repository root. Two local archival files are optional in a normal clone; all ten files are included in the handoff ZIP. Repackaged 17 September 2026 without changing source bytes or retrieval dates.
+Paths in the JSON manifest are relative to the repository root. Three local archival files are optional in a normal clone; all ten files are included in the handoff ZIP. Repackaged 17 September 2026 without changing source bytes or retrieval dates. The same day, the Seibert PDF moved from `sources/` to `local-source-archive/` after its CC BY claim was withdrawn; the handoff ZIP still holds it at its original path.
 
 ## seibert-2020
 
@@ -16,15 +16,17 @@ Source: [10.1021/acs.langmuir.0c00748](https://doi.org/10.1021/acs.langmuir.0c00
 
 Version: Published journal PDF served by institutional repository
 
-Rights: CC BY 4.0 assigned by the Bielefeld/NOAH repository rights record; retain that record with the PDF.
+Rights: **Redistribution permission unverified.** Not redistributed in the repository; linked reading with separate commentary until permission for the exact version and figure is verified.
+
+Rights correction, 17 September 2026: the earlier claim "CC BY 4.0 assigned by the Bielefeld/NOAH repository rights record" is withdrawn. The preserved record HTML is a browser-verification page with no rights statement. The archived PDF is the publisher version, marked "© 2020 American Chemical Society", with a "Downloaded via BIELEFELD LIBRARIES on July 23, 2020" stamp and a pointer to ACS sharing guidelines; it carries no Creative Commons notice. Crossref lists publisher policy references, not a Creative Commons licence. Unpaywall lists a submitted version at [PUB Bielefeld](https://pub.uni-bielefeld.de/record/2944406) as cc-by; that record was not verified (the site blocks automated access) and is not the archived version.
 
 Inspection: Full paper read; Fig. 2 visually inspected. Supplement not inspected.
 
-Access/rights record: [link](https://noah.nrw/ubbihs/content/titleinfo/5141652)
+Access record: [link](https://noah.nrw/ubbihs/content/titleinfo/5141652)
 
-- [seibert-2020.pdf](../sources/seibert-2020.pdf) — 5,808,981 bytes; retrieved 2026-09-10T14:34:32.585087+00:00.
+- `local-source-archive/seibert-2020.pdf` (complete handoff ZIP only, where it sits at `sources/seibert-2020.pdf`) — 5,808,981 bytes; retrieved 2026-09-10T14:34:32.585087+00:00.
   SHA-256: `0f441dd021a2d0f5986f74bc23db20c562122caf96ce3bcb8429f88723a8f3d8`
-- [seibert-2020-record.html](../sources/seibert-2020-record.html) — 12,499 bytes; retrieved 2026-09-10T14:33:12.946579+00:00.
+- [seibert-2020-record.html](../sources/seibert-2020-record.html) — 12,499 bytes; retrieved 2026-09-10T14:33:12.946579+00:00. Browser-verification page, not a rights record; retained as evidence of the failed rights retrieval.
   SHA-256: `73f9a39b88cc24837e5b262c813e07f0740491ab27906d7586f13671b77164dc`
 
 ## xu-2024

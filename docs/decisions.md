@@ -18,5 +18,6 @@ Consolidated 17 September 2026 from the discussion and revised scout. These are 
 | D12 | Bound any later formal survey by effort. | Set a remaining allowance at launch; five person-days total is the intended cap, with reliable prior effort accounted for. Declare an outcome at the cap. |
 | D13 | Package a repository handoff without selecting a project licence or remote. | Those choices remain with the project lead; source licences are retained. |
 | D14 | Publish the repository publicly on GitHub (17 September 2026). | Hosting and visibility are settled; the original-material licence and named maintainer remain open, and the local-archive exclusion still applies. |
+| D15 | Withdraw the unsupported Seibert CC BY claim and rebuild the published history without the Seibert PDF (17 September 2026). | Redistribution permission is recorded as unverified; the PDF is kept in `local-source-archive/`. Seibert remains a core case as a linked reading until permission for the exact version and figure is verified. The repository was made private, a local backup was kept, and the rebuilt history replaced it. Copies downloaded or cached while public cannot be recalled. |
 
 The public-core packaging decision is a chosen scope, not a general claim that all NC material is barred from public sharing or that every unchanged panel arrangement is an adaptation.

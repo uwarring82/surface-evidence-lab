@@ -7,7 +7,7 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--require-local-archive', action='store_true',
-                        help='Require the two files excluded from the default Git commit.')
+                        help='Require the local-archive files excluded from Git.')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     manifest = json.loads((root / 'literature/source-manifest.json').read_text(encoding='utf-8'))

@@ -2,7 +2,7 @@
 
 Priority: next teaching task. Owner: current project lead until explicitly reassigned. Status: open; worksheet/instructor drafts exist.
 
-Prepare attributed Seibert Fig. 2 and Croshaw Fig. 5 selections using the figure brief. Preserve the protocol distinctions, three separate probe-interaction sequences and optional status of Xu/Lu. Walk through the exercise with the available sources and record duration, stumbling points and revisions; do not claim a student trial if only an instructor walkthrough occurs.
+Prepare an attributed Croshaw Fig. 5 selection using the figure brief. Seibert Fig. 2 stays a linked reading with original commentary; do not reproduce it until permission for the exact version and figure is verified and recorded. Preserve the protocol distinctions, three separate probe-interaction sequences and optional status of Xu/Lu. Walk through the exercise with the available sources and record duration, stumbling points and revisions; do not claim a student trial if only an instructor walkthrough occurs.
 
 Acceptance:
 

@@ -18,7 +18,7 @@ Revised after the first-pass scout · 10 September 2026
 
 ## Distribution decision
 
-The public teaching core uses original text and attributed Seibert/Croshaw material under their recorded CC BY terms. Xu and Lu are linked readings with separate original commentary; reproduce neither their images nor adapted composites in this core. A separate source-preservation bundle retains its per-source licence restrictions and is not the public teaching packet.
+The public teaching core uses original text and attributed Croshaw material under its CC BY terms. Seibert remains a core case as a linked reading with separate original commentary; its earlier CC BY record was withdrawn on 17 September 2026, and its figures are not reproduced until permission for the exact version and figure is verified. Xu and Lu are linked readings with separate original commentary; reproduce neither their images nor adapted composites in this core. A separate source-preservation bundle retains its per-source licence restrictions and is not the public teaching packet.
 
 No new repository, lab agreement, schema or acquisition tooling is required for the prototype.
 

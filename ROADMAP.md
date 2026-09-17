@@ -2,7 +2,7 @@
 
 Work is ordered by the immediate teaching deliverable. No calendar dates or outside owners are committed.
 
-1. **Finish the teaching prototype.** Prepare attributed Seibert/Croshaw figures, walk through the worksheet, revise, and decide FP-2 readiness. Keep the linked readings optional. [Issue 01](planning/issues/01-teaching-prototype.md)
+1. **Finish the teaching prototype.** Prepare attributed Croshaw figures, walk through the worksheet, revise, and decide FP-2 readiness. Seibert stays a linked core reading until permission for the exact version and figure is verified. Keep the other linked readings optional. [Issue 01](planning/issues/01-teaching-prototype.md)
 2. **Close the literature safeguards as a separate effort.** Approve the selection boundary and effort cap before searching; test genuine longitudinal and history-gap cases and record a bounded null result if needed. [Issue 02](planning/issues/02-bounded-survey.md)
 3. **Resolve targeted evidence leads.** Inspect Xu images, retrieve/inspect the Pálinkás dataset, and check earlier defect assignments without inflating them into same-record revisions. [Issue 03](planning/issues/03-evidence-followups.md)
 4. **Feed the conceptual correction upstream.** Draft the time-reference status-model change and evidence/time acceptance examples. [Issue 04](planning/issues/04-evidence-model.md)
