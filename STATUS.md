@@ -27,7 +27,7 @@ U1 and U2 are separate safeguards before dependent research mechanics are relied
 
 ## Decisions still needed
 
-- Final repository name, hosting/visibility, original-material licence and named maintainer. `surface-evidence-lab` is a working name; the current project lead remains accountable, with no external implementer assigned.
+- Original-material licence and named maintainer. Hosting and visibility are settled: the repository has been public on GitHub as `uwarring82/surface-evidence-lab` since 17 September 2026; renaming is optional. The current project lead remains accountable, with no external implementer assigned.
 - Time/effort allowance and owner for any further formal survey. Earlier scout effort was not logged.
 - Later: research specimen, acquisition-record minimum, physical retention and lineage, source/deposition workflow, standards profile, access controls and implementation ownership.
 
