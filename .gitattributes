@@ -1,6 +1,7 @@
 *.md text eol=lf
 *.py text eol=lf
 *.pdf binary
+*.jpg binary
 # Preserve all archived bytes, including HTML, XML and JSON, without conversion.
 sources/** -text
 local-source-archive/** -text

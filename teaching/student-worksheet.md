@@ -32,7 +32,7 @@ Optional probability exercise: *assume*, solely for illustration, that exchanges
 
 ## B. Measurement changes the specimen
 
-Read Croshaw et al., *Atomic defect classification of the H–Si(100) surface through multi-mode scanning probe microscopy*, Fig. 5 and the accompanying discussion. [Paper](https://doi.org/10.3762/bjnano.11.119) · [Preserved copy](../sources/croshaw-2020.pdf)
+Read Croshaw et al., *Atomic defect classification of the H–Si(100) surface through multi-mode scanning probe microscopy*, Fig. 5 and the accompanying discussion. [Paper](https://doi.org/10.3762/bjnano.11.119) · [Preserved copy](../sources/croshaw-2020.pdf) · [Figure sheet](figure-sheet.md)
 
 7. Choose one of the three sequences, (a–c), (d–f), or (g–i). Draw its event order: initial observation, probe interaction during scanning, subsequent observation. Distinguish the observed contrast change from the authors' physical assignment.
 8. Record specimen identity, spatial correspondence and state history as separate claims. For each, identify the supporting source and any unresolved detail. Explain how the same physical location can have a changed physical state.

@@ -1,6 +1,6 @@
 # Figure preparation brief
 
-Status: work specification; no finished figure sheet is supplied. Use this with [issue 01](../planning/issues/01-teaching-prototype.md).
+Status: work specification. A review-draft [figure sheet](figure-sheet.md) covers Croshaw Fig. 5; Seibert Fig. 2 is link-only. Use this with [issue 01](../planning/issues/01-teaching-prototype.md).
 
 | Core source | Planned selection | Teaching purpose | Preparation checks |
 |---|---|---|---|
