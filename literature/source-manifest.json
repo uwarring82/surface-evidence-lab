@@ -64,7 +64,7 @@
       "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11614372/fullTextXML",
       "licence": "CC BY-NC 4.0 explicitly stated in article XML. Noncommercial reuse with attribution. Teaching-core decision: link and separate commentary only.",
       "licence_url": "https://creativecommons.org/licenses/by-nc/4.0/",
-      "inspection": "Fig. 4 caption-label corrections established from XML: adhesive partner of (e) is (f), not (b); partner of (g) is (h), not (d). Body text supports both. These are editorial notes, not a published erratum. Spatial correspondence over 140 minutes remains unverified. XML contains no figure-image bytes.",
+      "inspection": "Fig. 4 caption-label corrections established from XML: adhesive partner of (e) is (f), not (b); partner of (g) is (h), not (d). Body text supports both. These are editorial notes, not a published erratum. Spatial correspondence between 4a (30 min in water) and 4e (\"after 170 min\", start not stated) remains unverified; a 140-minute interval is an inference (corrected 2026-09-17). XML contains no figure-image bytes.",
       "version": "Europe PMC full-text XML retrieved 2026-09-10; not an independent research-data version",
       "checked_on": "2026-09-10",
       "archived_files": [

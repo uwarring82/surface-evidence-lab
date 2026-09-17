@@ -27,7 +27,7 @@ No new repository, lab agreement, schema or acquisition tooling is required for 
 - Seibert's approximately one-in-five stripe absence with plastic syringes, seven negative glass-syringe references, and two successful in-situ exchanges. Distinguish the protocols and approximate from exact counts.
 - Separate specimen identity, spatial correspondence and documented state history. At least one supported relationship and one unresolved relationship must be assessed.
 - Croshaw's probe-induced changes as events, including possible changes to the tip.
-- Xu's caption corrections as editorial notes, separate from unverified quantitative correspondence across 140 minutes.
+- Xu's caption corrections as editorial notes, separate from unverified quantitative correspondence between the 30 min and "after 170 min" images (a 140-minute interval is inferred, not reported).
 - Earlier and later physical interpretations retained with their scopes and publication dates; unknown measurement dates remain unknown.
 
 ## Deliverables and acceptance

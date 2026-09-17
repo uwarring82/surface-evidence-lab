@@ -21,7 +21,7 @@ Consolidated 17 September 2026. Scientific inspection and retrieval dates remain
 | U4 | Quantitative registration | No transform, independent validation or uncertainty certificate has been assessed. A published figure or stage coordinate alone is insufficient. |
 | U5 | Research physics | No pilot discriminating bulk diffusion from ambient contamination has been selected or run. |
 | U6 | Data access and inspection | Pálinkás Figshare ZIP retrieval/inspection is pending. Metadata and article figures are not a validated raw dataset. |
-| U7 | Teaching readiness | A draft figure sheet reproduces Croshaw Fig. 5 with attribution; its review, the walkthrough, review of student answerability and revisions remain. Only Croshaw figures have a verified reuse basis; Seibert Fig. 2 is read via link until permission for the exact version and figure is verified. |
+| U7 | Teaching readiness | A draft figure sheet reproduces Croshaw Fig. 5 with attribution. An AI desk check (not a walkthrough) flagged revisions; its four priority revisions have been applied, and a walkthrough protocol is ready; the walkthrough itself, review of student answerability and revisions remain. Only Croshaw figures have a verified reuse basis; Seibert Fig. 2 is read via link until permission for the exact version and figure is verified. |
 
 U1 and U2 are separate safeguards before dependent research mechanics are relied on. U3 and U4 also remain untested even if an introductory teaching packet is released. No graph representation currently exists to validate any of these mechanics.
 
