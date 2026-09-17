@@ -6,3 +6,4 @@ __pycache__/
 !/local-source-archive/README.md
 /PACKAGE-CHECKSUMS.sha256
 /dist/
+/site/figures/

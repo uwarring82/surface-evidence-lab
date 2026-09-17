@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Surface Evidence Lab</title>
+<meta name="description" content="FP-2 literature-based teaching lab on how surface-microscopy observations support physical explanations, specimen identity, spatial correspondence and specimen histories.">
+<style>
+@font-face { font-family: "Plex Condensed"; src: url("fonts/ibm-plex-sans-condensed-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plex Sans"; src: url("fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plex Sans"; src: url("fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Plex Sans"; src: url("fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+
+:root {
+  --ground: #f1f4f5;
+  --surface: #ffffff;
+  --ink: #152027;
+  --muted: #52606a;
+  --rule: #d2dade;
+  --accent: #0a6782;
+  --accent-strong: #074d62;
+  --on-accent: #ffffff;
+  --open-ink: #8a5200;
+  --open-bg: #fbebd2;
+  --done-ink: #2c6636;
+  --done-bg: #e0efe2;
+  --focus: #0a6782;
+  /* The figure plate stays light in both themes, like a printed plate. */
+  --plate: #ffffff;
+  --plate-edge: #d2dade;
+  --plate-ink: #26323a;
+  --plate-muted: #55626b;
+  --plate-link: #0a6782;
+  --display: "Plex Condensed", "IBM Plex Sans Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --body: "Plex Sans", "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: "Plex Mono", "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0e1316;
+    --surface: #151c20;
+    --ink: #e3e9ec;
+    --muted: #9aa8b0;
+    --rule: #28343a;
+    --accent: #62bad6;
+    --accent-strong: #93d2e6;
+    --on-accent: #0e1316;
+    --open-ink: #f2b861;
+    --open-bg: #3a2912;
+    --done-ink: #93d19d;
+    --done-bg: #1b3220;
+    --focus: #62bad6;
+    --plate-edge: #3a474e;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0e1316;
+  --surface: #151c20;
+  --ink: #e3e9ec;
+  --muted: #9aa8b0;
+  --rule: #28343a;
+  --accent: #62bad6;
+  --accent-strong: #93d2e6;
+  --on-accent: #0e1316;
+  --open-ink: #f2b861;
+  --open-bg: #3a2912;
+  --done-ink: #93d19d;
+  --done-bg: #1b3220;
+  --focus: #62bad6;
+  --plate-edge: #3a474e;
+}
+
+* { box-sizing: border-box; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--body);
+  -webkit-text-size-adjust: 100%;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { color: var(--accent-strong); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 2px; }
+cite { font-style: italic; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; margin: 0; }
+
+.wrap { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1rem, 4vw, 2.5rem); }
+.skip { position: absolute; left: 1rem; top: -4rem; background: var(--surface); color: var(--ink); padding: 0.5rem 0.75rem; z-index: 1; }
+.skip:focus { top: 1rem; }
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Review-draft banner */
+.draft { background: var(--open-bg); color: var(--open-ink); font-size: 0.875rem; }
+.draft .wrap { padding-block: 0.5rem; }
+.draft strong { font-family: var(--mono); font-weight: 500; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 0.5rem; }
+
+/* Top bar */
+.topbar { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.bar { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 0.8rem; }
+.brand { font-family: var(--display); font-weight: 600; font-size: 1.0625rem; color: var(--ink); text-decoration: none; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-size: 0.9375rem; }
+.bar nav a { text-decoration: none; }
+.bar nav a:hover { text-decoration: underline; }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 29rem); gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.25rem); line-height: 1; letter-spacing: -0.01em; margin-block: 0.6rem 1.25rem; }
+.lede { font-size: 1.1875rem; line-height: 1.55; max-width: 38rem; margin: 0; }
+.state { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: 1.5rem 0 0; color: var(--muted); font-size: 0.9375rem; }
+.chip { font-family: var(--mono); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 3px; white-space: nowrap; }
+.chip-open { color: var(--open-ink); background: var(--open-bg); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.btn { display: inline-flex; align-items: center; padding: 0.65rem 1.05rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); color: var(--ink); font-weight: 600; font-size: 0.9375rem; text-decoration: none; }
+.btn:hover { border-color: var(--accent); color: var(--ink); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+
+.plate { margin: 0; background: var(--plate); border: 1px solid var(--plate-edge); padding: 0.75rem; }
+.plate img { display: block; width: 100%; }
+.plate figcaption { padding: 0.8rem 0.2rem 0.15rem; color: var(--plate-ink); font-size: 0.875rem; line-height: 1.5; }
+.plate figcaption p { margin: 0; }
+.plate .settings { font-family: var(--mono); font-size: 0.75rem; color: var(--plate-muted); margin-top: 0.4rem; }
+.plate .fullsize { margin-top: 0.6rem; font-size: 0.875rem; font-weight: 600; }
+.plate .fullsize span { font-weight: 400; color: var(--plate-muted); }
+.plate .credit { font-size: 0.8125rem; color: var(--plate-muted); margin-top: 0.6rem; }
+.plate a { color: var(--plate-link); }
+
+/* Sections */
+.section { padding-block: clamp(2.75rem, 6vw, 4rem); scroll-margin-top: 1rem; }
+.band { background: var(--surface); border-block: 1px solid var(--rule); }
+.section h2 { font-size: clamp(1.65rem, 3.2vw, 2.15rem); line-height: 1.12; margin-bottom: 0.75rem; }
+.intro { max-width: 44rem; color: var(--muted); margin: 0 0 2rem; }
+
+/* Four claims */
+.claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.75rem 2rem; margin: 0; }
+.claims > div { border-top: 2px solid var(--ink); padding-top: 0.75rem; display: grid; gap: 0.35rem; align-content: start; }
+.claims > .explanation { border-top-color: var(--accent); }
+.claims dt .label { display: block; margin-bottom: 0.35rem; }
+.claims dt { font-family: var(--display); font-weight: 600; font-size: 1.3rem; line-height: 1.2; }
+.claims dd { margin: 0; }
+.aside { max-width: 44rem; margin: 2.25rem 0 0; font-style: italic; }
+
+/* Cases */
+.cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr)); gap: 1.5rem; }
+.case { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: clamp(1.25rem, 3vw, 1.75rem); display: flex; flex-direction: column; gap: 0.85rem; }
+.case h3 { font-size: 1.45rem; line-height: 1.15; }
+.case > p { margin: 0; }
+.facts { list-style: none; margin: 0.25rem 0 0; padding: 0; display: grid; }
+.facts li { display: grid; grid-template-columns: 4.75rem minmax(0, 1fr); gap: 0.75rem; align-items: baseline; border-top: 1px solid var(--rule); padding-block: 0.55rem; font-size: 0.9688rem; }
+.facts .n { font-family: var(--mono); font-weight: 500; font-variant-numeric: tabular-nums; }
+.case-foot { margin-top: auto; display: grid; gap: 0.75rem; padding-top: 0.25rem; }
+.case-foot p { margin: 0; font-size: 0.9375rem; }
+.note { color: var(--open-ink); background: var(--open-bg); padding: 0.55rem 0.75rem; border-radius: 3px; }
+
+.optional { margin-top: 2.75rem; }
+.optional h3 { font-size: 1.2rem; margin-bottom: 0.35rem; }
+.optional > p { margin: 0 0 1rem; color: var(--muted); max-width: 44rem; }
+.optional ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; max-width: 52rem; }
+.optional li { display: grid; grid-template-columns: 4.75rem minmax(0, 1fr); gap: 0.75rem; align-items: baseline; }
+
+/* Materials */
+.materials { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); column-gap: 2rem; }
+.materials li { border-top: 1px solid var(--rule); padding-block: 1rem 1.3rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.3rem 1rem; align-items: baseline; }
+.materials li > a { font-weight: 600; font-size: 1.0625rem; }
+.materials p { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: 0.9375rem; }
+
+/* Status */
+.status { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 2rem 3rem; }
+.status h3 { font-size: 1.2rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.6rem; }
+.status ul { margin: 0; padding-left: 1.15rem; display: grid; gap: 0.55rem; }
+.status .done li::marker { color: var(--done-ink); }
+.status .open li::marker { color: var(--open-ink); }
+.dot { width: 0.6rem; height: 0.6rem; border-radius: 50%; flex: none; }
+.done .dot { background: var(--done-ink); }
+.open .dot { background: var(--open-ink); }
+
+.foot { border-top: 1px solid var(--rule); padding-block: 2rem 3rem; color: var(--muted); font-size: 0.875rem; }
+.foot p { margin: 0; max-width: 50rem; }
+.foot p + p { margin-top: 0.5rem; }
+
+@media (max-width: 58rem) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .plate { max-width: 34rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="draft" role="note">
+  <div class="wrap"><strong>Review draft</strong>Not yet walkthrough-tested or used in class. Materials may change.</div>
+</div>
+
+<header class="topbar">
+  <div class="wrap bar">
+    <a class="brand" href="#main">Surface Evidence Lab</a>
+    <nav aria-label="Page sections">
+      <a href="#claims">Aim</a>
+      <a href="#cases">Cases</a>
+      <a href="#materials">Materials</a>
+      <a href="#status">Status</a>
+      <a href="https://github.com/uwarring82/surface-evidence-lab">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap hero" aria-labelledby="title">
+    <div>
+      <p class="label">FP-2 · literature-based analysis lab</p>
+      <h1 id="title">Surface Evidence Lab</h1>
+      <p class="lede">What can a pair of surface-microscopy images establish? Working from published scanning probe experiments, students separate the evidence for a physical explanation from the evidence that two observations concern the same specimen, the same region and a documented sequence of events.</p>
+      <p class="state"><span class="chip chip-open">Review draft</span> Not yet classroom-tested.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/student-worksheet.md">Open the worksheet</a>
+        <a class="btn" href="#materials">All materials</a>
+      </div>
+    </div>
+
+    <figure class="plate">
+      <img src="figures/croshaw-2020-fig5.jpg" width="1890" height="1941" alt="Nine scanning probe images in three rows. Each row shows a defect imaged at 1.3 V, a second image in which the contrast changes abruptly partway through the scan, and the same frame imaged again at 1.3 V.">
+      <figcaption>
+        <p>Three sequences that the authors report as tip-induced changes of a defect on H–Si(100): before, probe interaction, after.</p>
+        <p class="settings">STM 1.3 V / −1.8 V · nc-AFM 0 V · scale bars 1 nm · 4.5 K</p>
+        <p class="fullsize"><a href="figures/croshaw-2020-fig5.jpg">Open full-size figure</a> <span>1890 × 1941 px, to read the panel settings</span></p>
+        <p class="credit">Figure 5 from J. Croshaw, T. Dienel, T. Huff and R. Wolkow, <cite>Beilstein J. Nanotechnol.</cite> 11, 1346–1360 (2020), <a href="https://doi.org/10.3762/bjnano.11.119">doi:10.3762/bjnano.11.119</a>. © 2020 Croshaw et al.; licensee Beilstein-Institut. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Unmodified.</p>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="band section" id="claims" aria-labelledby="claims-title">
+    <div class="wrap">
+      <h2 id="claims-title">Four claims that are easy to blur</h2>
+      <p class="intro">An image pair can support a mechanism and still leave open whether it shows the same specimen, the same place or an undisturbed history. Students record each as a separate claim, with its source and what remains unresolved.</p>
+      <dl class="claims">
+        <div class="explanation">
+          <dt><span class="label">Mechanism</span>Physical explanation</dt>
+          <dd>Which process accounts for what is seen: adsorbed gas or contamination; hydrogen removal, a changed tip, or both?</dd>
+        </div>
+        <div>
+          <dt><span class="label">Relationship</span>Specimen identity</dt>
+          <dd>Do two observations concern the same specimen?</dd>
+        </div>
+        <div>
+          <dt><span class="label">Relationship</span>Spatial correspondence</dt>
+          <dd>Do they show the same region, and to what stated tolerance?</dd>
+        </div>
+        <div>
+          <dt><span class="label">Relationship</span>State history</dt>
+          <dd>What happened to the specimen in between, including changes caused by the measurement itself?</dd>
+        </div>
+      </dl>
+      <p class="aside">The same location can be in a changed state. A later interpretation of a comparable phenomenon does not overwrite an earlier claim about a different specimen.</p>
+    </div>
+  </section>
+
+  <section class="wrap section" id="cases" aria-labelledby="cases-title">
+    <h2 id="cases-title">Two core cases</h2>
+    <p class="intro">Both cases are read from the published papers. Neither is a bulk-diffusion versus ambient-contamination experiment; that research question lies outside this packet.</p>
+
+    <div class="cases">
+      <article class="case">
+        <p class="label">Part A · AFM · graphite–water interface</p>
+        <h3>A controlled intervention with variable outcomes</h3>
+        <p>Are the stripes seen at the graphite–water interface adsorbed gas, or contamination brought in with the water?</p>
+        <ul class="facts">
+          <li><span class="n">7</span><span>glass-syringe reference experiments without stripes, although nitrogen was present</span></li>
+          <li><span class="n">&gt; 100</span><span>standard plastic-syringe experiments, about 80 % with stripes</span></li>
+          <li><span class="n">2</span><span>in-situ exchanges from glass-syringe to plastic-syringe water, with matching outcomes</span></li>
+        </ul>
+        <div class="case-foot">
+          <p class="note">Figure not reproduced: its redistribution permission is unverified. Reading it may require an institutional subscription.</p>
+          <p>Seibert, Klassen, Latus, Bechstein and Kühnle, <cite>Langmuir</cite> 36, 7789–7794 (2020). <a href="https://doi.org/10.1021/acs.langmuir.0c00748">Read Fig. 2 at the publisher</a></p>
+        </div>
+      </article>
+
+      <article class="case">
+        <p class="label">Part B · STM and nc-AFM · H–Si(100) · 4.5 K</p>
+        <h3>Measurement changes the specimen</h3>
+        <p>The authors report that scanning removed a hydrogen atom from a negatively charged defect, and in one sequence changed the tip as well.</p>
+        <ul class="facts">
+          <li><span class="n">3</span><span>separate before, interaction and after sequences, not nine frames of one experiment</span></li>
+          <li><span class="n">1.3 V</span><span>empty-states images before and after each interaction</span></li>
+          <li><span class="n">(h)</span><span>AFM contrast the authors read as a change from a Si-terminated to an H-terminated tip</span></li>
+        </ul>
+        <div class="case-foot">
+          <p>Croshaw, Dienel, Huff and Wolkow, <cite>Beilstein J. Nanotechnol.</cite> 11, 1346–1360 (2020). <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/figure-sheet.md">Figure sheet with panel settings</a></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="optional">
+      <h3>Optional linked readings</h3>
+      <p>Linked only, with separate commentary in the worksheet. Their figures are not reproduced.</p>
+      <ul>
+        <li><span class="label">Part C</span><span>Xu et al., <cite>ChemPhysChem</cite> (2024): a reported time series, with images after 30 and after 170 minutes, and what a same-area claim would need. <a href="https://doi.org/10.1002/cphc.202400641">Article</a></span></li>
+        <li><span class="label">Part D</span><span>Lu et al., <cite>Scientific Reports</cite> 4, 7189 (2014): an earlier gas interpretation, read alongside Seibert (2020). <a href="https://doi.org/10.1038/srep07189">Article</a></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band section" id="materials" aria-labelledby="materials-title">
+    <div class="wrap">
+      <h2 id="materials-title">Materials</h2>
+      <p class="intro">Everything is kept in the GitHub repository and opens there.</p>
+      <ul class="materials">
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/student-worksheet.md">Student worksheet</a>
+          <span class="label">Students</span>
+          <p>Parts A–D with 14 questions, an optional probability exercise and a claim-table submission. Parts A and B are core.</p>
+        </li>
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/figure-sheet.md">Figure sheet</a>
+          <span class="label">Students</span>
+          <p>Croshaw Fig. 5 with its original caption, the settings printed on each panel and full attribution.</p>
+        </li>
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/claim-table.md">Claim table</a>
+          <span class="label">Students</span>
+          <p>Template for identity, correspondence and history claims, each with its source and unresolved information.</p>
+        </li>
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/instructor-notes.md">Instructor notes</a>
+          <span class="label">Instructors</span>
+          <p>Expected reasoning and what to credit. Contains answers.</p>
+        </li>
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/review/walkthrough-protocol.md">Walkthrough protocol</a>
+          <span class="label">Instructors</span>
+          <p>How to review the packet before class, with a record form and the AI desk check's points to probe.</p>
+        </li>
+        <li>
+          <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/literature/source-manifest.md">Sources and rights</a>
+          <span class="label">Reference</span>
+          <p>Identifiers, retrieval dates and checksums for 15 source records, with the <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/RIGHTS.md">terms for each source</a>. No licence has been chosen yet for the project's own text.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap section" id="status" aria-labelledby="status-title">
+    <h2 id="status-title">Status</h2>
+    <p class="intro">Updated 17 September 2026. Readiness for FP-2 will be decided only after a documented walkthrough.</p>
+    <div class="status">
+      <div class="done">
+        <h3><span class="dot" aria-hidden="true"></span>In place</h3>
+        <ul>
+          <li>First-pass literature scout with 15 source records</li>
+          <li>Student worksheet and instructor notes as review drafts</li>
+          <li>Figure sheet for Croshaw Fig. 5, with attribution reviewed</li>
+          <li>Walkthrough protocol and record form, prepared with an AI desk check that is not itself a walkthrough</li>
+          <li>Priority desk-check revisions: claim-table instructions, Part D comparison, Xu interval and Seibert summary</li>
+        </ul>
+      </div>
+      <div class="open">
+        <h3><span class="dot" aria-hidden="true"></span>Open</h3>
+        <ul>
+          <li>Remaining desk-check suggestions, such as a glossary and fuller instructor notes for Q2–Q14</li>
+          <li>Walkthrough with a named reviewer, recording time and stumbling points</li>
+          <li>Decision on FP-2 readiness</li>
+          <li>Reuse permission for Seibert Fig. 2; the paper stays link-only until then</li>
+          <li>A licence for the project's own text and code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Source, history and issue drafts: <a href="https://github.com/uwarring82/surface-evidence-lab">uwarring82/surface-evidence-lab</a>. No licence has been chosen yet for this page's text.</p>
+  <p>Croshaw Fig. 5 is reproduced under CC BY 4.0 with the credit shown beside it. Set in IBM Plex, under the SIL Open Font License, served from this site.</p>
+</footer>
+</body>
+</html>
