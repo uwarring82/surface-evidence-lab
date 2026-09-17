@@ -1,0 +1,349 @@
+{
+  "scout_date": "2026-09-10",
+  "scope": "First-pass scout accepted as a selection milestone; not the completed five-person-day survey",
+  "distribution_decision": "Public teaching core uses Seibert and Croshaw CC BY material and original text. Xu and Lu remain linked readings with separate commentary. The source-preservation bundle retains all individual licence restrictions.",
+  "sources": [
+    {
+      "id": "seibert-2020",
+      "title": "Origin of Ubiquitous Stripes at the Graphite–Water Interface",
+      "doi": "10.1021/acs.langmuir.0c00748",
+      "year": 2020,
+      "url": "https://doi.org/10.1021/acs.langmuir.0c00748",
+      "access_url": "https://noah.nrw/ubbihs/content/titleinfo/5141652",
+      "licence": "CC BY 4.0 assigned by the Bielefeld/NOAH repository rights record; retain that record with the PDF.",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "inspection": "Full paper read; Fig. 2 visually inspected. Supplement not inspected.",
+      "version": "Published journal PDF served by institutional repository",
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "seibert-2020.pdf",
+          "url": "https://noah.nrw/ubbihs/download/pdf/5141652",
+          "resolved_url": "https://noah.nrw/ubbihs/download/pdf/5141652",
+          "retrieved_utc": "2026-09-10T14:34:32.585087+00:00",
+          "bytes": 5808981,
+          "sha256": "0f441dd021a2d0f5986f74bc23db20c562122caf96ce3bcb8429f88723a8f3d8",
+          "content_type": "application/pdf",
+          "path": "sources/seibert-2020.pdf",
+          "optional_in_repository": false
+        },
+        {
+          "file": "seibert-2020-record.html",
+          "url": "https://noah.nrw/ubbihs/content/titleinfo/5141652",
+          "resolved_url": "https://noah.nrw/ubbihs/content/titleinfo/5141652",
+          "retrieved_utc": "2026-09-10T14:33:12.946579+00:00",
+          "bytes": 12499,
+          "sha256": "73f9a39b88cc24837e5b262c813e07f0740491ab27906d7586f13671b77164dc",
+          "content_type": "text/html; charset=utf-8",
+          "path": "sources/seibert-2020-record.html",
+          "optional_in_repository": false
+        }
+      ]
+    },
+    {
+      "id": "xu-2024",
+      "title": "Environmental Influence on Stripe Formation at the Graphite–Water Interface",
+      "doi": "10.1002/cphc.202400641",
+      "year": 2024,
+      "url": "https://doi.org/10.1002/cphc.202400641",
+      "access_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11614372/fullTextXML",
+      "licence": "CC BY-NC 4.0 explicitly stated in article XML. Noncommercial reuse with attribution. Teaching-core decision: link and separate commentary only.",
+      "licence_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "inspection": "Fig. 4 caption-label corrections established from XML: adhesive partner of (e) is (f), not (b); partner of (g) is (h), not (d). Body text supports both. These are editorial notes, not a published erratum. Spatial correspondence over 140 minutes remains unverified. XML contains no figure-image bytes.",
+      "version": "Europe PMC full-text XML retrieved 2026-09-10; not an independent research-data version",
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "xu-2024.xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11614372/fullTextXML",
+          "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11614372/fullTextXML",
+          "retrieved_utc": "2026-09-10T14:32:54.627226+00:00",
+          "bytes": 89247,
+          "sha256": "6913de02cc6a988800c5c27c6651d6cfb119585c4793c1ae95205e2a0e40ec38",
+          "content_type": "application/xml",
+          "path": "local-source-archive/xu-2024.xml",
+          "optional_in_repository": true
+        }
+      ]
+    },
+    {
+      "id": "lu-2014",
+      "title": "Interface-Induced Ordering of Gas Molecules Confined in a Small Space",
+      "doi": "10.1038/srep07189",
+      "year": 2014,
+      "url": "https://doi.org/10.1038/srep07189",
+      "access_url": "https://www.nature.com/articles/srep07189",
+      "licence": "CC BY-NC-ND 4.0 stated by publisher. Preserve unmodified source; do not assume adapted figure redistribution is permitted.",
+      "licence_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "inspection": "Full article text/captions inspected. PDF preserved. No quantitative registration performed.",
+      "version": "Publisher PDF",
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "lu-2014.pdf",
+          "url": "https://www.nature.com/articles/srep07189.pdf",
+          "resolved_url": "https://www.nature.com/articles/srep07189.pdf?error=cookies_not_supported&code=b94606f9-1edd-4bdb-a265-949b59e9d26d",
+          "retrieved_utc": "2026-09-10T14:39:14.910084+00:00",
+          "bytes": 1664285,
+          "sha256": "d15ead89e9459ae44ff431ff9c42e7e90bb94c34b66708702d882bc91e560331",
+          "content_type": "application/pdf",
+          "path": "local-source-archive/lu-2014.pdf",
+          "optional_in_repository": true
+        }
+      ]
+    },
+    {
+      "id": "palinkas-2022",
+      "title": "The composition and structure of the ubiquitous hydrocarbon contamination on van der Waals materials",
+      "doi": "10.1038/s41467-022-34641-7",
+      "year": 2022,
+      "url": "https://doi.org/10.1038/s41467-022-34641-7",
+      "access_url": "https://www.nature.com/articles/s41467-022-34641-7",
+      "licence": "CC BY 4.0 stated by publisher, subject to any third-party credit-line exceptions.",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "inspection": "Full article inspected; Fig. 1 visually inspected. No same-region inference between modalities.",
+      "version": "Publisher PDF and Europe PMC article XML",
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "palinkas-2022.pdf",
+          "url": "https://www.nature.com/articles/s41467-022-34641-7.pdf",
+          "resolved_url": "https://www.nature.com/articles/s41467-022-34641-7.pdf?error=cookies_not_supported&code=f0313210-e29e-4bd4-a00f-f30afba911f0",
+          "retrieved_utc": "2026-09-10T14:33:41.432506+00:00",
+          "bytes": 1899408,
+          "sha256": "fd4588bbf62de3cc0daedeb7f81adb65925f351c7dcf7393d925a4dcfa1a442d",
+          "content_type": "application/pdf",
+          "path": "sources/palinkas-2022.pdf",
+          "optional_in_repository": false
+        },
+        {
+          "file": "palinkas-2022.xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9646725/fullTextXML",
+          "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9646725/fullTextXML",
+          "retrieved_utc": "2026-09-10T14:36:51.543668+00:00",
+          "bytes": 125406,
+          "sha256": "818cc88231a250ebe1466d6e0cdb650fa36f71808cf941852e3a26396dc97f5d",
+          "content_type": "application/xml",
+          "path": "sources/palinkas-2022.xml",
+          "optional_in_repository": false
+        }
+      ]
+    },
+    {
+      "id": "palinkas-data-v1",
+      "title": "Figure data for The composition and structure of the ubiquitous hydrocarbon contamination on van der Waals materials",
+      "doi": "10.6084/m9.figshare.21294831.v1",
+      "year": 2022,
+      "url": "https://doi.org/10.6084/m9.figshare.21294831.v1",
+      "access_url": "https://api.figshare.com/v2/articles/21294831",
+      "licence": "CC BY 4.0 stated by Figshare record.",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "inspection": "Deposit record verified, contents of ZIP not inspected; download timed out.",
+      "version": "1; record publication date 2022-10-07",
+      "remote_file": {
+        "name": "data for figures in the main text.zip",
+        "bytes": 54034031,
+        "md5": "266085b53866b14edd327ee93ea4863b",
+        "url": "https://ndownloader.figshare.com/files/37779480"
+      },
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "palinkas-2022-data-record.json",
+          "url": "https://api.figshare.com/v2/articles/21294831",
+          "resolved_url": "https://api.figshare.com/v2/articles/21294831",
+          "retrieved_utc": "2026-09-10T14:32:55.306391+00:00",
+          "bytes": 3738,
+          "sha256": "24d1b26734d1fedb79207bb1b9053e65b786c44ec95231279f03fd1a9c4e1be0",
+          "content_type": "application/json",
+          "path": "sources/palinkas-2022-data-record.json",
+          "optional_in_repository": false
+        }
+      ]
+    },
+    {
+      "id": "croshaw-2020",
+      "title": "Atomic defect classification of the H–Si(100) surface through multi-mode scanning probe microscopy",
+      "doi": "10.3762/bjnano.11.119",
+      "year": 2020,
+      "url": "https://doi.org/10.3762/bjnano.11.119",
+      "access_url": "https://www.beilstein-journals.org/bjnano/articles/11/119",
+      "licence": "CC BY 4.0 stated by publisher; preserve attribution and original notices.",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "inspection": "Main paper read; Fig. 5 visually inspected. Supplement preserved, not comprehensively reviewed. Earlier assignment papers not yet checked at image level.",
+      "version": "Published article and supplement",
+      "checked_on": "2026-09-10",
+      "archived_files": [
+        {
+          "file": "croshaw-2020.pdf",
+          "url": "https://www.beilstein-journals.org/bjnano/content/pdf/2190-4286-11-119.pdf",
+          "resolved_url": "https://www.beilstein-journals.org/bjnano/content/pdf/2190-4286-11-119.pdf",
+          "retrieved_utc": "2026-09-10T14:33:56.533510+00:00",
+          "bytes": 4528264,
+          "sha256": "f56663aa68f4100368d6b7417dd50002af719d9593a661bf4c3ce369a4699a8c",
+          "content_type": "application/pdf",
+          "path": "sources/croshaw-2020.pdf",
+          "optional_in_repository": false
+        },
+        {
+          "file": "croshaw-2020-supplement.pdf",
+          "url": "https://www.beilstein-journals.org/bjnano/content/supplementary/2190-4286-11-119-S1.pdf",
+          "resolved_url": "https://www.beilstein-journals.org/bjnano/content/supplementary/2190-4286-11-119-S1.pdf",
+          "retrieved_utc": "2026-09-10T14:33:07.705015+00:00",
+          "bytes": 3123304,
+          "sha256": "35bac35c1a0d91b84fb2306f7056f91acb8dc9c025003c72a2a44f2dae0a6d04",
+          "content_type": "application/pdf",
+          "path": "sources/croshaw-2020-supplement.pdf",
+          "optional_in_repository": false
+        },
+        {
+          "file": "croshaw-2020.xml",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7492692/fullTextXML",
+          "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7492692/fullTextXML",
+          "retrieved_utc": "2026-09-10T14:36:49.046436+00:00",
+          "bytes": 148552,
+          "sha256": "58573ef5bf678f487844525a167b4fc7f263087c43677319d311a901a32b42af",
+          "content_type": "application/xml",
+          "path": "sources/croshaw-2020.xml",
+          "optional_in_repository": false
+        }
+      ]
+    },
+    {
+      "id": "wanjura-2019",
+      "title": "Deal-Grove Oxidation and Nanoparticle Adhesion – an AFM Study",
+      "doi": "10.48550/arXiv.1902.04494",
+      "year": 2019,
+      "url": "https://arxiv.org/abs/1902.04494v1",
+      "licence": "arXiv perpetual non-exclusive licence shown; broad third-party redistribution permission not established. Source link only.",
+      "inspection": "Full HTML and experimental procedure inspected. Preprint status retained; no journal version established.",
+      "version": "arXiv v1, submitted 2019-02-12; dynamically rendered manuscript date not used as publication date",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "angermann-2011",
+      "title": "Effect of wet-chemical substrate smoothing on passivation of ultrathin-SiO2/n-Si(111) interfaces prepared with atomic oxygen at thermal impact energies",
+      "doi": "10.2478/s11534-011-0053-0",
+      "year": 2011,
+      "url": "https://doi.org/10.2478/s11534-011-0053-0",
+      "access_url": "https://d-nb.info/1379950007/34",
+      "licence": "Unresolved; Fig. 2 explicitly reprinted with permission and points to a 2008 source. Do not assume transferable reuse permission.",
+      "inspection": "PDF text and caption inspected through web tool; visual screenshot failed. Local certificate verification failed; no local copy.",
+      "version": "2011 journal article as hosted by DNB",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "angermann-2008",
+      "title": "Optimisation of electronic interface properties of a-Si:H/c-Si hetero-junction solar cells by wet-chemical surface pre-treatment",
+      "doi": "10.1016/j.tsf.2007.12.033",
+      "year": 2008,
+      "url": "https://doi.org/10.1016/j.tsf.2007.12.033",
+      "licence": "Not established; link only.",
+      "inspection": "Publisher metadata/abstract verified; original figure and full text not inspected.",
+      "version": "Journal record",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "maclaren-2001",
+      "title": "An AFM study of the processing of hydrogen passivated silicon(111) of a low miscut angle",
+      "doi": "10.1016/S0039-6028(01)01331-0",
+      "year": 2001,
+      "url": "https://doi.org/10.1016/S0039-6028(01)01331-0",
+      "access_url": "https://eprints.gla.ac.uk/4029/",
+      "licence": "Not established; link only.",
+      "inspection": "Abstract and Glasgow metadata inspected. Glasgow states full text is unavailable there.",
+      "version": "Journal record",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "arvelo-2022",
+      "title": "Interfacial layering of hydrocarbons on pristine graphite surfaces immersed in water",
+      "doi": "10.1039/D2NR04161H",
+      "year": 2022,
+      "url": "https://doi.org/10.1039/D2NR04161H",
+      "access_url": "https://pubs.rsc.org/en/content/articlelanding/2022/nr/d2nr04161h",
+      "licence": "CC BY-NC 3.0 stated by RSC landing page.",
+      "licence_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "inspection": "Substantial indexed text, experimental section and rights statement inspected; direct access returned 403. Timed layering progression lead; exact lateral correspondence not established.",
+      "version": "Published journal article",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "graphite-2026",
+      "title": "Probing the molecular structure at graphite–water interfaces by correlating 3D-AFM and SHINERS",
+      "doi": "10.1038/s41467-026-68667-y",
+      "year": 2026,
+      "url": "https://doi.org/10.1038/s41467-026-68667-y",
+      "licence": "Open-access status seen; detailed reuse terms not checked in this scout. Link only.",
+      "inspection": "Full HTML inspected, especially Fig. 2 and independent-laboratory methods. Linked raw/source data not inspected.",
+      "version": "Published 2026-01-31",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "okada-1998",
+      "title": "AFM Observation and Molecular Orbital Analysis of Initial Oxidation in Air on H-terminated Si(111) Surface",
+      "year": 1998,
+      "url": "https://www.ieice.org/publications/ken/summary.php?contribution_id=KJ00002218071&expandable=2&ken_id=SDM&lang=jp&presen_date=1998%2F12%2F10&schedule_id=AN10013254_98%28445%29&society_cd=ES&year=1998",
+      "licence": "Unverified; link only.",
+      "inspection": "User-supplied bibliographic lead, previously located record. Full Japanese report not inspected in this scout.",
+      "version": "SDM98-173, December 1998",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "obrien-2001",
+      "title": "Towards the fabrication of phosphorus qubits for a silicon quantum computer",
+      "doi": "10.1103/PhysRevB.64.161401",
+      "year": 2001,
+      "url": "https://doi.org/10.1103/PhysRevB.64.161401",
+      "licence": "Not established; link only.",
+      "inspection": "Publisher metadata verified; image-level dihydride assignment cited by Croshaw remains unverified.",
+      "version": "Published 2001-09-21",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    },
+    {
+      "id": "ballard-2014",
+      "title": "Earlier silicon-defect source cited as reference 79 by Croshaw et al.",
+      "doi": "10.1116/1.4864302",
+      "year": 2014,
+      "url": "https://doi.org/10.1116/1.4864302",
+      "licence": "Not established; link only.",
+      "inspection": "Citation transcribed from Croshaw reference list; original article not inspected.",
+      "version": "Journal citation only",
+      "checked_on": "2026-09-10",
+      "archived_files": []
+    }
+  ],
+  "failed_downloads": [
+    {
+      "file": "arvelo-2022.pdf",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2022/nr/d2nr04161h",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "palinkas-2022-data-v1.zip",
+      "url": "https://ndownloader.figshare.com/files/37779480",
+      "error": "The read operation timed out"
+    },
+    {
+      "file": "xu-2024.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614372/pdf/CPHC-25-e202400641.pdf",
+      "error": "Response is not PDF"
+    },
+    {
+      "file": "angermann-2011.pdf",
+      "url": "https://d-nb.info/1379950007/34",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)>"
+    }
+  ],
+  "packaged_on": "2026-09-17",
+  "path_base": "repository_root",
+  "packaging_note": "Source bytes and original retrieval dates unchanged. Local archive files included in handoff ZIP, ignored by default Git setup."
+}
