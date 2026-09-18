@@ -2,7 +2,7 @@
 
 **This is not a walkthrough.** An AI agent read the student materials against the sources to find questions that cannot be answered, factual mismatches and likely stumbling points. It measured no timings and involved no students or instructors. It prepares the [walkthrough](walkthrough-protocol.md) and is not evidence for U7.
 
-**Record status:** the findings below describe commit `7b8b789` and are kept unchanged. Suggestions 1–4 were applied afterwards on 17 September 2026; the rest remain open.
+**Record status:** the findings below describe commit `7b8b789` and are kept unchanged. Suggestions 1–4 were applied on 17 September 2026 and suggestions 5 and 6 on 18 September 2026; the rest remain open.
 
 ## Method
 

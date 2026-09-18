@@ -59,11 +59,11 @@ Optional Parts C and D do not block readiness, but record their timing and probl
 
 ## Points to probe
 
-From the [AI desk check](ai-desk-check-2026-09-17.md) of commit `7b8b789`. Its suggestions 1–4 (claim-table instructions, Xu interval, Part D comparison, Seibert summary) were applied before the walkthrough: check that they work. The other suggestions are still open: check how much they matter in practice.
+From the [AI desk check](ai-desk-check-2026-09-17.md) of commit `7b8b789`. Its suggestions 1–6 (claim-table instructions, Xu interval, Part D comparison, Seibert summary, the access fallback for Q2 and Q4, and Q9 guidance) were applied before the walkthrough: check that they work. The other suggestions are still open: check how much they matter in practice.
 
-- **Seibert access (Part A):** can Q2 and Q4 be answered without the paper? What happens when access fails?
+- **Seibert access (Part A):** does access work for students? If it fails, does the instructor's description of Fig. 2 carry Q2 far enough, and what happens to Q4?
 - **Claim table:** do reviewers find the template from the worksheet? Do they meet the supported/unresolved rule without being told it?
-- **Q9:** does the reviewer find evidence that separates a changed specimen from a changed imaging response, or only restate the authors' tip-change claim?
+- **Q9:** with the added locators, does the reviewer find evidence that separates a changed specimen from a changed imaging response, or only restate the authors' tip-change claim?
 - **Q11:** is the 140-minute interval treated as reported or as inferred?
 - **Q13:** is the linked Lu paper treated as the one Seibert challenges?
 - **Fig. 5:** are the scan arrows, discontinuities and colour ranges legible, and are different colour ranges mistaken for contrast changes?

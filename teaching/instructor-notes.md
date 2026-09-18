@@ -1,6 +1,6 @@
 # FP-2 instructor notes
 
-Draft for review · revised 17 September 2026 · Companion to [student worksheet](student-worksheet.md)
+Draft for review · revised 17–18 September 2026 · Companion to [student worksheet](student-worksheet.md)
 
 **Scope:** adsorbed gas versus organic contamination at graphite–water interfaces, followed by probe-induced changes on H–Si(100). This packet does not prefigure the research layer's bulk-diffusion question.
 
@@ -21,11 +21,36 @@ For the optional toy calculation, 0.8² = 0.64 under the explicitly assumed inde
 
 Useful proposed controls could include matched glass-to-glass exchange, randomized handling order on fresh samples, or independent chemical analysis of introduced material. Credit the discriminating predictions and handling of confounds, rather than a particular instrument choice.
 
+### If students cannot open the paper
+
+Questions 2 and 4 need it: Fig. 2 for the images, the Experimental Section for the protocol differences. Check access before the session and, if it fails, try the institutional subscription, an interlibrary route, or the repository record linked from the [manifest](../literature/source-manifest.md) — note that the copy listed there is a submitted version, which may differ from the published figure, and this project has not verified it.
+
+As a fallback, this description of Fig. 2 stands in for part of Q2. It is a description, not a reproduction, and it is no substitute for looking at the panels.
+
+- **(a)** After water was injected with a glass syringe, the graphite–water interface is imaged free of stripes. Terraces and step edges are visible.
+- **(b)** After exchanging the water in situ with a plastic syringe, the same surface area is imaged again and adsorbates now cover the terraces. The authors state that the area is the same as in (a) and that stripes began to form almost immediately after the exchange.
+- **(c)** A zoom into a terrace and the step edge in the upper right of (b), showing the stripes.
+- **(d)** A height profile taken at a marked position in (c), averaged over 15 profiles, giving a stripe width of about 5 nm.
+
+With only this description, students can state what the authors claim and that the claim rests on the authors' own identification of the area. They cannot check landmarks themselves, so mark Q2 as partly answered and do not expect the registration discussion that the images support.
+
 ## Croshaw: acquisition as an event
 
 Fig. 5 contains three distinct examples, not nine successive frames of one experiment. Each row supplies a before/intervention/after sequence. The authors identify subsequent STM frames with the earlier frames. Changes during scanning and possible tip changes must be represented. Source: [Croshaw paper](../sources/croshaw-2020.pdf), Fig. 5 and adjacent text.
 
 Credit answers that separate directly observed contrast discontinuities from assignments of hydrogen removal, charge changes or tip functionalisation. A persistent specimen and location do not imply an unchanged state. Exact timings and a full history are not supplied simply by a well-labelled sequence.
+
+### Q9: what a strong answer uses
+
+The authors treat the contrast change in the AFM image (h) as *supporting* hydrogen removal, reading it as a tip apex that went from Si-terminated to H-terminated (p. 1356). A good answer holds both readings at once: the same observation can support the authors' account and still leave a changed imaging response as an alternative. Credit any of these:
+
+- comparison with sequences (a–c) and (d–f), which reach a similar after-state with no tip change asserted;
+- features elsewhere in the same frame used as an internal reference, since a tip change would affect them too;
+- re-imaging after deliberately reconditioning the tip;
+- the spectroscopy the authors cite for this defect, STM I(V) and dI/dV in Supporting Information Figs. S16–S17 (p. 1357);
+- noting that tip functionalisation is known to change contrast and apparent atomic positions (p. 1347), and that the authors monitored for tip changes while imaging (p. 1352).
+
+Students who read the colour-scale difference between (g) at 0–145 pm and (i) at 0–50 pm as a physical contrast change have made a reading error worth correcting: the displayed range differs, so by-eye comparison across that pair is unreliable.
 
 ## Xu: caption correction and correspondence are different checks
 
