@@ -121,6 +121,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 29rem); gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-block: clamp(2.5rem, 6vw, 4.5rem); }
 .hero h1 { font-size: clamp(2.6rem, 6.5vw, 4.25rem); line-height: 1; letter-spacing: -0.01em; margin-block: 0.6rem 1.25rem; }
 .lede { font-size: 1.1875rem; line-height: 1.55; max-width: 38rem; margin: 0; }
+.context { max-width: 38rem; margin: 1rem 0 0; }
 .state { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: 1.5rem 0 0; color: var(--muted); font-size: 0.9375rem; }
 .chip { font-family: var(--mono); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.2rem 0.5rem; border-radius: 3px; white-space: nowrap; }
 .chip-open { color: var(--open-ink); background: var(--open-bg); }
@@ -145,6 +146,29 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
 .band { background: var(--surface); border-block: 1px solid var(--rule); }
 .section h2 { font-size: clamp(1.65rem, 3.2vw, 2.15rem); line-height: 1.12; margin-bottom: 0.75rem; }
 .intro { max-width: 44rem; color: var(--muted); margin: 0 0 2rem; }
+
+/* Getting started and choosing a scope */
+.start-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 2rem 3rem; align-items: start; }
+.steps { margin: 0; padding-left: 1.5rem; display: grid; gap: 1.15rem; }
+.steps li { padding-left: 0.35rem; }
+.steps li::marker { color: var(--accent); font-family: var(--mono); font-weight: 500; }
+.steps strong { display: block; }
+.tutor { background: var(--ground); border-left: 3px solid var(--accent); padding: 1.25rem; }
+.tutor h3 { font-size: 1.3rem; }
+.tutor p { margin: 0.75rem 0 0; }
+.paths { display: grid; gap: 1rem; }
+.path { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: clamp(1.25rem, 3vw, 1.75rem); }
+.path h3 { font-size: 1.4rem; margin-top: 0.4rem; }
+.path > p:not(.label) { max-width: 52rem; margin: 0.75rem 0 0; }
+.path details { margin-top: 1rem; }
+.path summary { color: var(--accent); font-weight: 600; cursor: pointer; padding-block: 0.35rem; }
+.path dl { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 0.65rem 1rem; margin: 1rem 0 0; }
+.path dt { font-weight: 600; }
+.path dd { margin: 0; max-width: 48rem; }
+.rigour { margin-top: 2.5rem; border-top: 2px solid var(--accent); padding-top: 1.25rem; }
+.rigour h3 { font-size: 1.4rem; }
+.rigour ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 0.8rem 2.5rem; padding-left: 1.2rem; }
+.rigour > p { max-width: 48rem; margin-bottom: 0; }
 
 /* Four claims */
 .claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.75rem 2rem; margin: 0; }
@@ -196,6 +220,11 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
 @media (max-width: 58rem) {
   .hero { grid-template-columns: minmax(0, 1fr); }
   .plate { max-width: 34rem; }
+  .start-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 36rem) {
+  .path dl { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+  .path dd + dt { margin-top: 0.65rem; }
 }
 </style>
 </head>
@@ -210,6 +239,8 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
   <div class="wrap bar">
     <a class="brand" href="#main">Surface Evidence Lab</a>
     <nav aria-label="Page sections">
+      <a href="#start">Start here</a>
+      <a href="#paths">Task levels</a>
       <a href="#claims">Aim</a>
       <a href="#cases">Cases</a>
       <a href="#materials">Materials</a>
@@ -224,11 +255,13 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
     <div>
       <p class="label">FP-2 · literature-based analysis lab</p>
       <h1 id="title">Surface Evidence Lab</h1>
-      <p class="lede">What can a pair of surface-microscopy images establish? Working from published scanning probe experiments, students separate the evidence for a physical explanation from the evidence that two observations concern the same specimen, the same region and a documented sequence of events.</p>
+      <p class="lede">Two microscope images look different. Has the surface changed, has the measuring tip changed, or are we looking at a different place? This lab helps you work out what the evidence can actually tell you.</p>
+      <p class="context">You will read published experiments, compare images and explain your reasoning. These microscopes move a tiny probe tip across a surface and turn its measured response into an image. A bright patch or a stripe needs interpretation; its appearance alone does not tell us what it is made of.</p>
+      <p class="context">Start with the guided tasks below. You can begin with the supplied readings and a place to take notes; no coding or microscope operation is required. Tutors help set the scope and discuss what the evidence supports.</p>
       <p class="state"><span class="chip chip-open">Review draft</span> Not yet classroom-tested.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/student-worksheet.md">Open the worksheet</a>
-        <a class="btn" href="#materials">All materials</a>
+        <a class="btn btn-primary" href="#start">Start with one image sequence</a>
+        <a class="btn" href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/student-worksheet.md">Open the worksheet</a>
       </div>
     </div>
 
@@ -243,6 +276,86 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
     </figure>
   </section>
 
+  <section class="band section" id="start" aria-labelledby="start-title">
+    <div class="wrap">
+      <h2 id="start-title">Start here: one sequence, one careful claim</h2>
+      <p class="intro">New to surface microscopy? Begin with this short practice task using Croshaw Fig. 5, which is freely available. You do not need to understand the whole paper before taking the first step.</p>
+      <div class="start-grid">
+        <ol class="steps">
+          <li><strong>Open the figure and choose one row.</strong> Use the <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/figure-sheet.md">figure sheet</a>. Pick (a–c), (d–f) or (g–i), and read its caption and panel settings. Each row is a separate sequence.</li>
+          <li><strong>Write down what you can see.</strong> Note two visible features or changes, with panel letters. Check the scale bars, scan arrows and displayed ranges. For now, describe the image without assigning a cause.</li>
+          <li><strong>Read what the authors think happened.</strong> Read the Fig. 5 discussion on p. 1356 of the <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/sources/croshaw-2020.pdf">Croshaw paper</a>. Keep their explanation separate from your observations. List unfamiliar words to discuss with your tutor.</li>
+          <li><strong>Try one row of the claim table.</strong> Use the <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/claim-table.md">template</a> to make a claim about the same sample, the same place, or what happened between images. Add its source and one limit. Write “not reported” when information is missing.</li>
+          <li><strong>Compare your reasoning with a partner or tutor.</strong> Explain what supports your claim and what further evidence might change your mind. Bring the annotated sequence and your table row; a well-explained uncertainty is a useful result.</li>
+        </ol>
+        <aside class="tutor" aria-labelledby="tutor-title">
+          <h3 id="tutor-title">For tutors: agree the task first</h3>
+          <p>Choose the questions, available time and expected output together. This starter is practice; it does not replace the full core worksheet or its claim-table requirements.</p>
+          <p>Before Part A, check access to Seibert. Q2 and Q4 need the paper. If access fails, use the <a href="https://github.com/uwarring82/surface-evidence-lab/blob/main/teaching/instructor-notes.md">instructor guidance</a> and record what remains only partly answerable.</p>
+          <p>Let learners attempt an answer before opening the instructor notes, which contain answers. Discuss the evidence and assumptions, rather than rewarding how many optional tasks they attempt.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="paths" aria-labelledby="paths-title">
+    <h2 id="paths-title">Choose how far to take the question</h2>
+    <p class="intro"><strong>You do not need to complete every level.</strong> Guided core work is a worthwhile endpoint. The later levels are optional choices for more independent work, not a checklist for every student. Agree your scope with your tutor; more freedom changes the task, not the standard of evidence.</p>
+    <div class="paths">
+      <article class="path">
+        <p class="label">Level 1 · Beginner · Guided core</p>
+        <h3>Work from the supplied evidence</h3>
+        <p>After the starter, use the worksheet to compare explanations and separate claims about the sample, the place and its history.</p>
+        <dl>
+          <dt>Do</dt><dd>Work through core Parts A and B (Q1–Q10) and the claim table, in the order agreed with your tutor.</dd>
+          <dt>Boundaries</dt><dd>Use the selected papers, figures and source locators. Keep the protocols separate. Do not fill gaps with guessed dates, counts or experimental steps.</dd>
+          <dt>Bring back</dt><dd>Your answers and a table covering all three relationship kinds, with at least one supported and one genuinely unresolved relationship. Unknown chemical identity alone does not meet that last requirement.</dd>
+          <dt>Stop when</dt><dd>You have completed the agreed core work and discussed its limits. Optional readings, calculations and research tasks are not required to finish this level.</dd>
+        </dl>
+      </article>
+      <article class="path">
+        <p class="label">Level 2 · Advanced · Optional</p>
+        <h3>Choose one question to investigate further</h3>
+        <p>You choose the comparison or method within a bounded question. For example, examine the time claims in Part C, compare the differently scoped interpretations in Part D, or design a control for one core case.</p>
+        <details>
+          <summary>Tasks, boundaries and a useful result</summary>
+          <dl>
+            <dt>Do</dt><dd>Choose one extension, state the question and decide what evidence would distinguish the possible answers. A calculation or analysis script is an option when it helps answer that question.</dd>
+            <dt>Boundaries</dt><dd>Agree the sources or data, method and time limit before starting. Check that needed data are accessible. Label a proposed experiment as a proposal and an illustrative calculation as a model, rather than as a measured result.</dd>
+            <dt>Bring back</dt><dd>A short analysis with source locators, assumptions, steps someone else could repeat, and a conclusion that states what remains unresolved.</dd>
+            <dt>Stop when</dt><dd>You have answered the bounded question or reached the agreed limit. Record missing evidence or a null result; discuss a new scope before expanding the search.</dd>
+          </dl>
+        </details>
+      </article>
+      <article class="path">
+        <p class="label">Level 3 · Open research · Optional</p>
+        <h3>Frame your own research problem</h3>
+        <p>At the widest scope, the question, material and method are open. You might design a new experiment, develop an image-comparison method, study another surface, or build a way to document a specimen’s history. These are project directions, not established results or required coursework.</p>
+        <details>
+          <summary>Broad scope, with an explicit research plan</summary>
+          <dl>
+            <dt>Do</dt><dd>Define a physical or evidence question that matters, explain why it is not already answered, and propose observations that could support or challenge your explanation. Choose tools only after the question is clear.</dd>
+            <dt>Boundaries</dt><dd>With a supervisor, turn the broad aim into a feasible first milestone: needed data or equipment, access and permissions, time, resources and a way to test the method. Practical experiments require an agreed lab arrangement.</dd>
+            <dt>Bring back</dt><dd>First, a research proposal with alternatives and success criteria. If work proceeds, retain the original data, analysis steps, uncertainties and changes of interpretation so others can assess the result.</dd>
+            <dt>Stop when</dt><dd>The agreed milestone is reached or feasibility fails. An explained limit can justify revising or ending a project. Completing the teaching packet alone does not validate a new research method.</dd>
+          </dl>
+        </details>
+      </article>
+    </div>
+    <div class="rigour" aria-labelledby="rigour-title">
+      <h3 id="rigour-title">Scientific rigour matters at every level</h3>
+      <ul>
+        <li><strong>Make claims traceable.</strong> Give the paper, page, panel or data record that supports each important statement.</li>
+        <li><strong>Separate observation from explanation.</strong> Say what you saw, what the authors report, and what you infer. Identify a proposal or assumption as such.</li>
+        <li><strong>Check comparisons.</strong> Look at units, scale bars, colour ranges and experimental conditions before comparing images or numbers.</li>
+        <li><strong>Keep uncertainty visible.</strong> Do not invent missing information. Consider another explanation and say what evidence would help distinguish it.</li>
+        <li><strong>Keep the reasoning checkable.</strong> Record your steps and assumptions, including for calculations or code, and explain why a conclusion follows.</li>
+        <li><strong>Respect the source.</strong> Credit reused material and check its reuse terms. Clearly label your own notes, changes and interpretations.</li>
+      </ul>
+      <p>A modest claim with clear evidence is valuable. “The available evidence does not decide this” can be a strong conclusion when you explain why.</p>
+    </div>
+  </section>
+
   <section class="band section" id="claims" aria-labelledby="claims-title">
     <div class="wrap">
       <h2 id="claims-title">Four claims that are easy to blur</h2>
@@ -254,11 +367,11 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
         </div>
         <div>
           <dt><span class="label">Relationship</span>Specimen identity</dt>
-          <dd>Do two observations concern the same specimen?</dd>
+          <dd>Do two observations concern the same physical sample?</dd>
         </div>
         <div>
           <dt><span class="label">Relationship</span>Spatial correspondence</dt>
-          <dd>Do they show the same region, and to what stated tolerance?</dd>
+          <dd>Do they show the same place on that sample? How precisely can the locations be matched?</dd>
         </div>
         <div>
           <dt><span class="label">Relationship</span>State history</dt>
@@ -308,7 +421,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
       <h3>Optional linked readings</h3>
       <p>Linked only, with separate commentary in the worksheet. Their figures are not reproduced.</p>
       <ul>
-        <li><span class="label">Part C</span><span>Xu et al., <cite>ChemPhysChem</cite> (2024): a reported time series, with images after 30 and after 170 minutes, and what a same-area claim would need. <a href="https://doi.org/10.1002/cphc.202400641">Article</a></span></li>
+        <li><span class="label">Part C</span><span>Xu et al., <cite>ChemPhysChem</cite> (2024): an image at 30 minutes and a later image labelled “after 170 min”. A 140-minute interval is an inference; examine what supports the same-area claim. <a href="https://doi.org/10.1002/cphc.202400641">Article</a></span></li>
         <li><span class="label">Part D</span><span>Lu et al., <cite>Scientific Reports</cite> 4, 7189 (2014): an earlier gas interpretation, read alongside Seibert (2020). <a href="https://doi.org/10.1038/srep07189">Article</a></span></li>
       </ul>
     </div>
@@ -355,7 +468,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
 
   <section class="wrap section" id="status" aria-labelledby="status-title">
     <h2 id="status-title">Status</h2>
-    <p class="intro">Updated 17 September 2026. Readiness for FP-2 will be decided only after a documented walkthrough.</p>
+    <p class="intro">Updated 18 September 2026. Readiness for FP-2 will be decided only after a documented walkthrough.</p>
     <div class="status">
       <div class="done">
         <h3><span class="dot" aria-hidden="true"></span>In place</h3>
@@ -365,6 +478,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; 
           <li>Figure sheet for Croshaw Fig. 5, with attribution reviewed</li>
           <li>Walkthrough protocol and record form, prepared with an AI desk check that is not itself a walkthrough</li>
           <li>Priority desk-check revisions: claim-table instructions, Part D comparison, Xu interval and Seibert summary</li>
+          <li>Access fallback and Q9 guidance, plus a beginner starting path and optional task levels, drafted for review</li>
         </ul>
       </div>
       <div class="open">
